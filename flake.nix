@@ -28,6 +28,7 @@
         apps.tailnet-ping = {
           type = "app";
           program = "${self.packages.${system}.tailnet-ping}/bin/tailnet-ping";
+          defaultApp = self.apps.${system}.tailnet-ping;
         };
       });
 }
